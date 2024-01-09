@@ -1,0 +1,98 @@
+
+:root {
+    --bg--primary: #111010;
+    --text-light: #FFFFFF;
+    --title--primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+}
+
+header {
+    background-color: var(--bg--primary);
+    opacity: 0.9;
+    color: var(--text-light);
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 12px 0;
+    width: 100%;
+}
+
+header nav ul {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    z-index: 2;
+}
+
+header nav ul li {
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
+
+main section {
+    position: relative;
+    text-align: center;
+}
+
+main .main-section .text-wraper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+main .main-section h1 {
+    color: var(--text-light);
+    line-height: 3rem;
+    color: var(--title--primary-color);
+    font-size: 56px;
+    letter-spacing: -0.28px;
+    margin-bottom: 14px;
+}
+
+main .main-section h2 {
+    color: var(--subtitle-color);
+    font-size: 1.7rem;
+    font-weight: normal;
+    line-height: rem;
+    letter-spacing: 0.11px;
+    margin-bottom: 23px;
+}
+
+main .main-section small {
+    font-size: 1.1rem;
+}
+
+main .main-section a {
+    color: var(--action-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 0.11px;
+    top: 230px;
+    text-decoration: none;
+}
+
+main .main-section a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main .main-section img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;    
+}
